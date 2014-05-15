@@ -1,0 +1,11 @@
+atalhos:
+  surround
+    S + caractere
+  easeymotion
+    \w + sequencia
+  emmet
+    ctrl + y +,
+  multiple cursors
+    ctrl [nxpESC]
+  align
+    v<enter>**|
