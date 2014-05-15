@@ -12,12 +12,18 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+
+" Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign with a Vim movement
+nmap <Leader>a <Plug>(EasyAlign)
 "configuracao easymotion
 map <Leader> <Plug>(easymotion-prefix)
 map <C-t> :NERDTreeToggle<CR>
 map <C-c> "+y
 imap <C-v> <ESC>"+p
-imap <C-s> <ESC>:w
+"imap <C-s> <ESC>:w
 imap jj <ESC>
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
             \ "\<lt>C-n>" :
