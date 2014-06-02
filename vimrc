@@ -1,12 +1,3 @@
-"ctrlp, nerdtree, emmet, surround, easymotion
-
-"https://github.com/kien/ctrlp.vim.git
-"https://github.com/scrooloose/nerdtree.git
-"https://github.com/mattn/emmet-vim.git
-"git://github.com/msanders/snipmate.vim.git
-"https://github.com/Lokaltog/vim-easymotion
-"git://github.com/tpope/vim-sensible.git
-"git://github.com/tpope/vim-surround.git
 
 call pathogen#infect()
 syntax on
@@ -41,7 +32,10 @@ imap <C-@> <C-Space>
 imap <C-j> <DOWN>
 imap <C-k> <UP>
 
+map ,t :tabnext<CR>
+map ,T :tabprevious<CR>
 map , <C-w>
+
 nnoremap / /\v
 vnoremap / /\v
 "cnoremap %s/ %smagic/
@@ -53,14 +47,15 @@ set guicursor+=i:ver10
 "set guicursor=n-ci:hor30-iCursor-blinkwait300-blinkon200-blinkoff150
 "set guicursor+=
 set number
-highlight Cursor guifg=white guibg=black
-highlight iCursor guifg=white guibg=steelblue
+"highlight Cursor guifg=white guibg=black
+"highlight iCursor guifg=white guibg=steelblue
 "set guicursor=n-v-c:block-Cursor
 "set guicursor+=i:ver100-iCursor
 "set guicursor+=n-v-c:blinkon0
 "set guicursor+=i:blinkwait10
 "colo desert 
-colorscheme monokai
+"colorscheme monokai
+colorscheme solarized 
 set expandtab
 set guifont=monaco\ 12
 set tabstop=2
@@ -72,6 +67,8 @@ set bg=dark
 set scrolloff=4
 set noswapfile
 set ignorecase
+set guioptions -=T
+set guioptions -=m 
 
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
