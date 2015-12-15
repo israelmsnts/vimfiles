@@ -23,6 +23,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 "imap ll <ESC>
 "imap hh <ESC>
 
+"emmet crtl + y + ,
+
 inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
             \ "\<lt>C-n>" :
             \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
@@ -55,7 +57,7 @@ set number
 "set guicursor+=i:blinkwait10
 "colo desert 
 "colorscheme monokai
-colorscheme solarized 
+"colorscheme solarized 
 set expandtab
 set guifont=monaco\ 12
 set tabstop=2
@@ -69,6 +71,8 @@ set noswapfile
 set ignorecase
 set guioptions -=T
 set guioptions -=m 
+
+let g:jsx_ext_required = 0
 
 "let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
